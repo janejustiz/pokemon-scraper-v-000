@@ -27,7 +27,7 @@ class Pokemon
     SQL
 
     pokemon = db.execute(sql, id).flatten
-    new = Pokemon.new(id: pokemon[0], name: pokemon[1], type: pokemon[2], db: db)
+    new = Pokemon.new(id: pokemon[0], name: pokemon[1], type: pokemon[2], hp: pokemon[3], db: db)
   end
 
 end
